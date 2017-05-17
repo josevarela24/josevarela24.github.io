@@ -41,6 +41,7 @@ body, html {
     position:relative;
     min-height: 100%;
     height: auto;
+    padding: 0px 0px 0px 0px;
 }
 .panel.second {
     background-color: black;
@@ -200,8 +201,7 @@ body, html {
 html {
         box-sizing: border-box;
         background-color: black;
-    }
-
+}
 
 *,
 *:before,
@@ -251,24 +251,24 @@ html {
 }
 
 .col:after {
-background: rgba(0, 0, 0, 0.5);
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-content: '';
-opacity: 0;
--webkit-transition: opacity .5s ease;
--moz-transition: opacity .5s ease;
--o-transition: opacity .5s ease;
--ms-transition: opacity .5s ease;
-transition: opacity .5s ease;
-cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    cursor: pointer;
 }
 
 .col:hover:after {
-opacity: 1;
+    opacity: 1;
 }
 
 
@@ -276,6 +276,7 @@ opacity: 1;
     .col-md-4 {
         width: 33.33333%; 
         height: 473.5px;
+        padding: 0px 0px 0px 0px;  /*Got rid of padding besides images on second panel*/
     }
 }
 

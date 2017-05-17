@@ -37,15 +37,10 @@ body, html {
     background-size: cover;
 }
 .panel.first {
-    background-color: white;
+    background-color: black;
     position:relative;
     min-height: 100%;
     height: auto;
-}
-.panel.first .container{
-    position: relative;
-    text-align: center;
-    margin-top: 8%;
 }
 .panel.second {
     background-color: black;
@@ -63,7 +58,7 @@ body, html {
 .panel.third {
     background-image: url("https://s-media-cache-ak0.pinimg.com/originals/14/b5/ba/14b5ba3c979ab59d1fd6e0dc33bba730.jpg");
 }
-#one,#two,#three,#four{
+#name,#projects,#about,#contact{
     background-color:transparent;
     border:none;
     color:white;
@@ -98,16 +93,7 @@ body, html {
     color: white;
     text-decoration: none;
 }
-.img {
-    margin: auto;
-    width:  350px;
-    height: 250px;
-    background-position: 50% 50%;
-    background-repeat:   no-repeat;
-    background-size:     cover;
-    position: relative;
-    margin-top: 25px;
-}
+
 /********************************************************************/
 .button {
     background-color: #4CAF50; /* Green */
@@ -178,10 +164,7 @@ body, html {
     width: 30%;
     border-radius: 100%;
 }
-.img:hover{
-    opacity: 0.5;
-    cursor: pointer;
-}
+
 .hvr-bounce-in {
     display: inline-block;
     vertical-align: middle;
@@ -212,4 +195,123 @@ body, html {
 .hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
+}
+
+html {
+        box-sizing: border-box;
+        background-color: black;
+    }
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+.grid {
+    width: 100%;
+    margin: 0 auto;
+}
+.grid:before,
+.grid:after,
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+.grid:after,
+.row:after {clear: both;}
+[class*='col-']{
+    width: 100%;
+    float: left;
+    min-height: 1px;
+}
+.col {
+    padding: 1em;
+    margin: 1px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.3);
+    min-height: 200px;
+    height: inherit;
+    position: relative;
+}
+
+#one,
+#two,
+#three,
+#four,
+#five,
+#six {
+    font-size: 18px;
+    font-weight: bold;
+    color: yellow;
+    text-shadow: 2px 2px 8px black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.col:after {
+background: rgba(0, 0, 0, 0.5);
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+content: '';
+opacity: 0;
+-webkit-transition: opacity .5s ease;
+-moz-transition: opacity .5s ease;
+-o-transition: opacity .5s ease;
+-ms-transition: opacity .5s ease;
+transition: opacity .5s ease;
+cursor: pointer;
+}
+
+.col:hover:after {
+opacity: 1;
+}
+
+
+@media screen and (min-width:1024px){
+    .col-md-4 {
+        width: 33.33333%; 
+        height: 473.5px;
+    }
+}
+
+#one {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("http://i1380.photobucket.com/albums/ah173/josevarela24/pr_zpsqmg5djiv.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+#two {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("http://i1380.photobucket.com/albums/ah173/josevarela24/eco_zpsxnwbef3b.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+#three {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("http://i1380.photobucket.com/albums/ah173/josevarela24/vid_zpspgxjiw98.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#four {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("http://i1380.photobucket.com/albums/ah173/josevarela24/cpu_zpszg8ih8ba.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#five {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("http://i1380.photobucket.com/albums/ah173/josevarela24/el_zpssgazlaxi.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#six {
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("http://i1380.photobucket.com/albums/ah173/josevarela24/op_zpslaw59j3k.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }

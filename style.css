@@ -1,0 +1,137 @@
+
+    html {
+        box-sizing: border-box;
+    }
+    body {
+        font-family: monospace;
+        padding: 0;
+        margin: 0;
+        background: black;
+    }
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+    .grid {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .grid:before,
+    .grid:after,
+    .row:before,
+    .row:after {
+        content: " ";
+        display: table;
+    }
+    .grid:after,
+    .row:after {clear: both;}
+    [class*='col-']{
+        width: 100%;
+        float: left;
+        min-height: 1px;
+    }
+    .col {
+        padding: 1em;
+        margin: 1px;
+        box-shadow: 0 1px 1px rgba(0,0,0,.3);
+        min-height: 200px;
+        height: inherit;
+        position: relative;
+    }
+
+    #one,
+    #two,
+    #three,
+    #four,
+    #five,
+    #six {
+        font-size: 18px;
+        font-weight: bold;
+        color: yellow;
+        text-shadow: 2px 2px 8px black;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+/*
+    .col:hover {
+        -webkit-filter: brightness(50%);
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        transition: all .5s ease;
+        cursor: pointer;
+    }
+*/
+
+    .col:after {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    cursor: pointer;
+    }
+
+    .col:hover:after {
+    opacity: 1;
+    }
+
+    .col span {
+    position: relative;
+    z-index: 1;
+    }
+
+    @media screen and (min-width:1024px){
+        .col-md-4 {
+            width: 33.33333%; 
+            height: 473.5px;
+        }
+    }
+
+    #one {
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("http://i1380.photobucket.com/albums/ah173/josevarela24/pr_zpsqmg5djiv.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    #two {
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("http://i1380.photobucket.com/albums/ah173/josevarela24/st_zpsg0p9hhsw.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    #three {
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("http://i1380.photobucket.com/albums/ah173/josevarela24/ho_zps138xembp.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    #four {
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("http://i1380.photobucket.com/albums/ah173/josevarela24/fa_zpsvoitwerb.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    #five {
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("http://i1380.photobucket.com/albums/ah173/josevarela24/mo_zps4pqjrlp4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    #six {
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("http://i1380.photobucket.com/albums/ah173/josevarela24/ca_zpscheaw97d.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }

@@ -42,7 +42,8 @@ function getWeather(api){
         for(var i=1; i<=4; i++){
             if (i!=1) getDayWeek(day, "day"+i);
             document.getElementById("fourDesc"+i).innerHTML=data.daily.data[i-1].summary;
-            document.getElementById("fourIcon"+i).innerHTML=data.daily.data[i-1].icon;
+            //document.getElementById("fourIcon"+i).innerHTML=data.daily.data[i-1].icon;
+            weatherIcon(data.daily.data[i-1].icon, "fourIcon"+i);
             document.getElementById("fourTemp"+i).innerHTML=Math.round(data.daily.data[i-1].temperatureMax)+"&deg";
             document.getElementById("fourPrec"+i).innerHTML+=parseFloat(data.daily.data[i-1].precipProbability)*100+"%";
             day++;

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <span id="wind">Wind: </span><span id="humidity">Humidity: </span><span id="dew">Dew Pt: </span>
+                <span id="uv">Visibility: </span><span id="pressure">Pressure: </span><br>
+            <div class="time">
+            </div>
+            <div class="bulk">
+                <h1 id="output">Sunny AF Outside</h1>
+                <h1 id="outputD">&deg</h1>
+                <div id="data"></div>
+                <img width="300" src="icons/sun.svg" id="image">
+                <h3 id="trial"></h3>
+            </div>
+            
+        </div>
+
+        <div class="grid">
+            <div class="row">
+                    <div class="col-xs-6 col-sm-3 col-md-3" id="p1">
+                        <h4 id="day1">TODAY</h4>
+                        <p id="fourDesc1">XXX</p>
+                        <img width="75" src="icons/cloud-rain.svg" id="fourIcon1">
+                        <p>HIGH</p>
+                        <h2 id="fourTemp1">XX&deg</h2>
+                        <span id="fourPrec1"><img width="40" src="icons/umbrella.svg"></span>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3" id="p2">
+                        <h4 id="day2">TOMORROW</h4>
+                        <p id="fourDesc2">XXX</p>
+                        <img width="75" src="icons/cloud-rain.svg" id="fourIcon2">
+                        <p>LOW</p>
+                        <h2 id="fourTemp2">XX&deg</h2>
+                        <span id="fourPrec2"><img width="40" src="icons/umbrella.svg"></span>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3" id="p3">
+                        <h4 id="day3">NEXT</h4>
+                        <p id="fourDesc3">XXX</p>
+                        <img width="75" src="icons/cloud.svg" id="fourIcon3">
+                        <p>HIGH</p>
+                        <h2 id="fourTemp3">XX&deg</h2>
+                        <span id="fourPrec3"><img width="40" src="icons/umbrella.svg"></span>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3" id="p4">
+                        <h4 id="day4">NENEXT</h4>
+                        <p id="fourDesc4">XXX</p>
+                        <img width="75" src="icons/cloud.svg" id="fourIcon4">
+                        <p>HIGH</p>
+                        <h2 id="fourTemp4">XX&deg</h2>
+                        <span id="fourPrec4"><img width="40" src="icons/umbrella.svg"></span>
+                    </div>
+            </div>
+            <!-- //row -->
+        </div>
+
+        <div id="container1">
+        <div class="search-table-outter wrapper">
+            <table class="search-table inner">
+                <tr>
+                <th class="fixed">Time</th>
+                <th>Icon</th>
+                <th>Description</th>
+                <th>Temp</th>
+                <th>Precip</th>
+                <th>Wind</th>
+                </tr>
+                <tr>
+                <td class="fixed" id="time1">xxxx </td> 
+                <td><img width="50" src="" id="logo1"></td>
+                <td id="desc1">xxxx xxxx </td>
+                <td id="temp1">xxx </td>
+                <td id="prec1">xxx% </td>
+                <td id="wind1">xxx mph </td>
+                </tr>
+                <tr>
+                <td class="fixed" id="time2">4:11 </td> 
+                <td><img width="50" src="icons/umbrella.svg" id="logo2"></td>
+                <td id="desc2">xxxx xxxx </td>
+                <td id="temp2">xxx </td>
+                <td id="prec2">xxx% </td>
+                <td id="wind2">xxx mph </td>
+                </tr>
+                <tr>
+                <td class="fixed" id="time3">4:11 </td> 
+                <td><img width="50" src="" id="logo3"></td>
+                <td id="desc3">xxxx xxxx </td>
+                <td id="temp3">xxx </td>
+                <td id="prec3">xxx% </td>
+                <td id="wind3">xxx mph </td>
+                </tr>
+                <tr>
+                <td class="fixed" id="time4">4:11 </td> 
+                <td><img width="50" src="" id="logo4"></td>
+                <td id="desc4">xxxx xxxx </td>
+                <td id="temp4">xxx </td>
+                <td id="prec4">xxx% </td>
+                <td id="wind4">xxx mph </td>
+                </tr>
+                <tr>
+                <td class="fixed" id="time5">4:11 </td> 
+                <td><img width="50" src="" id="logo5"></td>
+                <td id="desc5">xxxx xxxx </td>
+                <td id="temp5">xxx </td>
+                <td id="prec5">xxx% </td>
+                <td id="wind5">xxx mph </td>
+                </tr>
+                <tr>
+                <td class="fixed" id="time6">4:11 </td> 
+                <td><img width="50" src="" id="logo6"></td>
+                <td id="desc6">xxxx xxxx </td>
+                <td id="temp6">xxx </td>
+                <td id="prec6">xxx% </td>
+                <td id="wind6">xxx mph </td>
+                </tr>
+                <tr>
+                <td class="fixed" id="time7">4:11 </td> 
+                <td><img width="50" src="" id="logo7"></td>
+                <td id="desc7">xxxx xxxx </td>
+                <td id="temp7">xxx </td>
+                <td id="prec7">xxx% </td>
+                <td id="wind7">xxx mph </td>
+                </tr>
+                <tr>
+                <td class="fixed" id="time8">4:11 </td> 
+                <td><img width="50" src="" id="logo8"></td>
+                <td id="desc8">xxxx xxxx </td>
+                <td id="temp8">xxx </td>
+                <td id="prec8">xxx% </td>
+                <td id="wind8">xxx mph </td>
+                </tr>
+            </table>
+        </div>
+        </div>    
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

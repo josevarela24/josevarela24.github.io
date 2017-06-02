@@ -1,0 +1,118 @@
+body {
+    /*text-align: center;*/
+    color: white;
+    /*background-image: url("images/night.jpg");*/
+    background-size: cover;
+}
+
+.jumbotron {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #00264d;
+}
+
+/*img {
+    width: 300px;        CTRL+/
+}*/
+
+span {
+    font-size: 15px;
+    display: inline-block; 
+    width: 15%;
+    min-width: 100px;
+    position: inherit;
+
+}
+
+h4 {
+    padding-top: 15px;
+}
+
+.grid {
+    width: 75%;
+    background-color: lightblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row span{
+    font-size: 14px;
+    color: #A9A9A9;
+}
+
+#p1 {
+    background-color: #004A83;
+}
+
+#p2 {
+    background-color: #0A619A;
+}
+
+#p3 {
+    background-color: #6D9BF1;
+}
+
+#p4 {
+    background-color: #BCD2EE;
+}
+
+#p1,#p2,#p3,#p4 {
+    height: 322.8px;
+    text-align: center;
+}
+
+
+.search-table-outter {
+    width: auto; 
+    max-width: 735px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+.search-table{
+    table-layout: fixed; 
+    margin:0px auto 0px auto; 
+    background-color: lightblue
+}
+.search-table, td, th{
+    border-collapse:collapse; 
+    line-height: 10px;
+}
+th{
+    padding:20px 10px; 
+    font-size:15px; 
+}
+td{
+    padding:5px 10px; 
+    height:60px;
+}
+.search-table-outter { overflow-x: auto;}
+th, td { min-width: 100px; text-align: center; }
+
+.fixed {
+    position: absolute; 
+    left: auto; 
+    top: auto;
+    background-color: lightblue;
+}
+
+.search-table tr th:nth-child(2), .search-table tr td:nth-child(2) {
+    padding-left: 150px;
+}
+
+.search-table tr td:nth-child(1) {
+    padding-top: 25px;
+}
+
+.container {
+    padding-bottom: 30px;
+}
+
+/*This is so the degree symbol could be inline with Temp*/
+#output, #outputD {
+    display: inline;
+}
+
+.bulk {
+    padding-top: 50px;
+}

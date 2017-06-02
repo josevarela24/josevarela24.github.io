@@ -128,37 +128,37 @@ function getBackground(n, weatherType){
 function weatherIcon(weatherType, weatherId) {
     switch (weatherType) {
         case "clear-day":
-            document.getElementById(weatherId).src="icons/sun.svg";
+            document.getElementById(weatherId).src="http://svgshare.com/i/1mz.svg";
             break;
         case "clear-night":
-            document.getElementById(weatherId).src="icons/moon.svg";
+            document.getElementById(weatherId).src="http://svgshare.com/i/1my.svg";
             break;
         case "partly-cloudy-day":
-            document.getElementById(weatherId).src="icons/cloud-sun.svg";
+            document.getElementById(weatherId).src="http://svgshare.com/i/1nX.svg";
             break;
         case "partly-cloudy-night":
-            document.getElementById(weatherId).src="icons/cloud-moon.svg";
+            document.getElementById(weatherId).src="http://svgshare.com/i/1pM.svg";
             break;
         case "cloudy":
-            document.getElementById(weatherId).src="icons/cloud.svg";
+            document.getElementById(weatherId).src="http://svgshare.com/i/1my.svg";
             break;
         case "rain":
-            document.getElementById(weatherId).src="icons/cloud-rain.svg";
+            document.getElementById(weatherId).src="http://svgshare.com/i/1nW.svg";
             break;
         case "sleet":
-            document.getElementById(weatherId).src="icons/cloud-hail-alt.svg";
+            document.getElementById(weatherId).src="http://svgshare.com/i/1pe.svg";
             break;
         case "snow":
-            document.getElementById(weatherId).src="icons/cloud-snow.svg";
+            document.getElementById(weatherId).src="http://svgshare.com/i/1oR.svg";
             break;
         case "wind":
-            document.getElementById(weatherId).src="icons/wind.svg";
+            document.getElementById(weatherId).src="http://svgshare.com/i/1pf.svg";
             break;
         case "fog":
-            document.getElementById(weatherId).src="icons/cloud-fog.svg";
+            document.getElementById(weatherId).src="http://svgshare.com/i/1o6.svg";
             break;
         default:
-            document.getElementById(weatherId).src="icons/cloud-fog.svg";
+            document.getElementById(weatherId).src="http://svgshare.com/i/1nX.svg";
             break;
     }
 }

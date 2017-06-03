@@ -21,7 +21,10 @@ span {
     width: 15%;
     min-width: 100px;
     position: inherit;
+}
 
+.jumbotron span{
+    width: 153px;
 }
 
 h4 {
@@ -109,10 +112,14 @@ th, td { min-width: 100px; text-align: center; }
 }
 
 /*This is so the degree symbol could be inline with Temp*/
-#output, #outputD {
+#output, #outputD, #outputF {
     display: inline;
 }
 
 .bulk {
     padding-top: 50px;
+}
+
+.row h2{
+    display: inline-block;
 }

@@ -2,7 +2,36 @@
 $(document).ready(function() {
 
   getUserInfo();
+  $("#outputF").click(function() {
+    var degree = toggleFC($(this).text());
+    $(this).text(degree);
+    // var temp = toggleTemp($("#output").text(), degree);
+    // $("#output").text(temp);
+
+    var temp;
+    for(var i=0; i<13; i++){
+        temp = toggleTemp($(arr[i]).text(), degree);
+        $(arr[i]).text(temp);
+    }
+  });
 });
+
+var arr = ["#output", "#fourTemp1", "#fourTemp2", "#fourTemp3", "#fourTemp4", "#temp1", "#temp2", "#temp3", "#temp4", 
+            "#temp5", "#temp6", "#temp7", "#temp8"];
+
+function toggleFC(val) {
+  if (val == "F") {
+    return "C";
+  }  
+  return "F";
+}
+
+function toggleTemp(val, x) {
+  if (x == "F") {
+    return Math.round(val * (9/5) + 32);
+  }  
+  return Math.round((val - 32) * (5/9));
+}
 
 var coord = document.getElementById("data");   //going to be used for error and getting geo coordinates
 var trial = document.getElementById("trial");
@@ -40,13 +69,14 @@ function getWeather(api){
         
         //4 boxes
         for(var i=1; i<=4; i++){
-            if (i!=1) getDayWeek(day, "day"+i);
+            getDayWeek(day, "day"+i);
             document.getElementById("fourDesc"+i).innerHTML=data.daily.data[i-1].summary;
-            //document.getElementById("fourIcon"+i).innerHTML=data.daily.data[i-1].icon;
+            // document.getElementById("fourIcon"+i).innerHTML=data.daily.data[i-1].icon;
             weatherIcon(data.daily.data[i-1].icon, "fourIcon"+i);
-            document.getElementById("fourTemp"+i).innerHTML=Math.round(data.daily.data[i-1].temperatureMax)+"&deg";
+            document.getElementById("fourTemp"+i).innerHTML=Math.round(data.daily.data[i-1].temperatureMax);//+"&deg"
             document.getElementById("fourPrec"+i).innerHTML+=parseFloat(data.daily.data[i-1].precipProbability)*100+"%";
             day++;
+            if(day==7){day=0};
         }     
 
         getBackground(n, data.currently.icon);
@@ -55,8 +85,8 @@ function getWeather(api){
             document.getElementById("time"+i).innerHTML=n+":00";
             weatherIcon(data.hourly.data[i-1].icon, "logo"+i);
             document.getElementById("desc"+i).innerHTML=data.hourly.data[i-1].summary;
-            document.getElementById("temp"+i).innerHTML=Math.round(data.hourly.data[i-1].temperature)+"&deg";
-            document.getElementById("prec"+i).innerHTML=parseFloat(data.hourly.data[i-1].precipProbability)*100+"%";
+            document.getElementById("temp"+i).innerHTML=Math.round(data.hourly.data[i-1].temperature);//+"&deg"
+            document.getElementById("prec"+i).innerHTML=Math.round(parseFloat(data.hourly.data[i-1].precipProbability)*100)+"%";
             document.getElementById("wind"+i).innerHTML=data.hourly.data[i-1].windSpeed+" mph";
             n++;
         }
@@ -99,7 +129,7 @@ function getHeader(current) {
 
 function getBackground(n, weatherType){
     if (n<6 || n>=22) {$('body').css('background-image', 'url(images/night.jpg)');}
-    else if (n>6) {$('body').css('background-image', 'url(images/sunset.jpg)');}
+    else if (n<8 || n>19) {$('body').css('background-image', 'url(images/sunset.jpg)');}
     else{
         switch (weatherType) {
             case "clear-day":

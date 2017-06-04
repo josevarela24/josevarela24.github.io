@@ -123,3 +123,7 @@ th, td { min-width: 100px; text-align: center; }
 .row h2{
     display: inline-block;
 }
+
+#outputF {
+    cursor: pointer;
+}

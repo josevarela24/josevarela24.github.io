@@ -121,7 +121,7 @@ function getDayWeek(day, dayId){
 
 function getHeader(current) {
     document.getElementById("wind").innerHTML+=Math.round(current.windSpeed) + " mph";
-    document.getElementById("humidity").innerHTML+=parseFloat(current.humidity)*100 + "%";
+    document.getElementById("humidity").innerHTML+=Math.round(parseFloat(current.humidity)*100) + "%";
     document.getElementById("dew").innerHTML+=current.dewPoint + "&deg";
     document.getElementById("uv").innerHTML+=current.visibility + "+ mi";
     document.getElementById("pressure").innerHTML+=Math.round(current.pressure) + " mb";

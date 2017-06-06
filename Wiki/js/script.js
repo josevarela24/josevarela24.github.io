@@ -36,7 +36,7 @@ function keyup(e) {
               $('<p>'+json[2][i]+'</p>').appendTo('#box'+i);
               $( "#box"+i ).wrap( "<a href='"+json[3][i]+"' style='text-decoration:none' target='_blank'></a>" );
               $('#box'+i).animate({opacity:1});
-          }, 200 * i);
+          }, 220 * i);
         }(i));
       }
       x=1;

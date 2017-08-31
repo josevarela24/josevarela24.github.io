@@ -281,37 +281,37 @@ html {
 }
 
 #one {
-    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("http://i1380.photobucket.com/albums/ah173/josevarela24/F-35_zpswhrynaaj.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
 }
 #two {
-    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("http://i1380.photobucket.com/albums/ah173/josevarela24/eco_zpsxnwbef3b.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
 }
 #three {
-    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("http://i1380.photobucket.com/albums/ah173/josevarela24/vid_zpspgxjiw98.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 #four {
-    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("http://i1380.photobucket.com/albums/ah173/josevarela24/cpu_zpszg8ih8ba.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 #five {
-    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("http://i1380.photobucket.com/albums/ah173/josevarela24/el_zpssgazlaxi.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/5.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 #six {
-    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("http://i1380.photobucket.com/albums/ah173/josevarela24/op_zpslaw59j3k.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/6.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

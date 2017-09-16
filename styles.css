@@ -281,37 +281,37 @@ html {
 }
 
 #one {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/1.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/1.JPG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
 }
 #two {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/2.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/2.JPG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
 }
 #three {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/3.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/3.JPG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 #four {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/4.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/4.JPG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 #five {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/5.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/5.JPG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 #six {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/6.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/6.JPG");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
